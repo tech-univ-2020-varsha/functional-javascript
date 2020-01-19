@@ -1,11 +1,17 @@
-const countWords = require('./countWords');
+const countWords = require('./reduce.js');
 
-describe('The function to count the number of times each string is occured in an array', () => {
+describe('The function to count the number of times each string occured in an array', () => {
     it('should return the object', () => {
         let inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
         const wordCount = countWords(inputWords);
         expect(wordCount).toBeInstanceOf(Object);
     });
+    it('should return the number of objects equal to distinct elements in the array', () => {
+        let inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
+        let inputSet = [...new Set(inputWords)];
+        const wordCount = countWords(inputWords);
+        expect(inputSet.length).toBe(Object.keys(wordCount).length);
+    })
     it('should contain valid key-value pair', () => {
         let inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
         const wordCount = countWords(inputWords);

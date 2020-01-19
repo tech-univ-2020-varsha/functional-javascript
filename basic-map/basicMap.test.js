@@ -1,6 +1,6 @@
 const doubleAll = require('./doubleAll');
 describe('the doubleAll function', () => {
-    it('should only return array', () => {
+    it('should return array', () => {
         let numArray = [1, 2, 3];
         const result = doubleAll(numArray);
         expect(result).toBeInstanceOf(Array);

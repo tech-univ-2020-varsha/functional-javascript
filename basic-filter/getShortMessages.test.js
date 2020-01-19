@@ -2,9 +2,6 @@ const getShortMessages = require('./getShortMessages');
 
 describe('The getShortMessages funtion', () => {
 
-
-
-
     it('should return array of messages that have <50 characters', () => {
         const messageArray = [
             { message: 'Esse id amet quis eu esse aute officia ipsum.' },

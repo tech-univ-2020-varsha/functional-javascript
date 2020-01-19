@@ -1,0 +1,26 @@
+{
+  "name": "functional-javascipt-exercise",
+  "version": "1.0.0",
+  "description": "assignment on functional javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "random": "mkdir ./demo && jest",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tech-univ-2020-varsha/functional-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tech-univ-2020-varsha/functional-javascript/issues"
+  },
+  "homepage": "https://github.com/tech-univ-2020-varsha/functional-javascript#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0"
+  }
+}
